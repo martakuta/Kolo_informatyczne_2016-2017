@@ -1,0 +1,58 @@
+﻿Podstawowe komendy konsoli (Linux)
+(jeśli są problemy z wyświetlaniem nowych linii na Windowsie, spróbuj otworzyć w Nodepad++)
+
+pwd -- wyświetla ścieżkę aktualnego katalogu
+
+ls -- wyświetla zawartość aktualnego katalogu
+
+ls -a -- wyświetla także pliki ukryte
+
+cd /sciezka/do/folderu -- zmiana folderu na podany w ścieżce
+/ -- katalog główny
+~  -- katalog domowy
+. -- katalog aktualny
+.. -- katalog nadrzędny
+
+touch nazwa_pliku -- tworzy plik
+
+rm nazwa_pliku -- usuwa plik
+
+cp źródło cel -- kopiuje plik źródło do folderu cel
+
+mv źródło cel -- przenosi plik źródło do folderu cel
+
+mkdir nazwa_katalogu -- tworzy katalog
+
+rmdir nazwa_katalogu -- usuwa pusty katalog
+
+echo jakis_tekst byc moze z odstepami -- wypisuje tekst na standardowe wyjście
+
+program > plik -- przekierowuje standardowe wyjście programu do pliku – jeśli plik nie istnieje, to tworzy go, jeśli istnieje, to nadpisuje zawartość
+
+program >> plik -- dopisuje wyjście na koniec pliku
+
+cat plik1 plik2 … plikn -- wypisuje na standardowe wyjście zawartość plików: plik1, plik2, … , plikn
+
+chmod +x / +w / +r nazwa_pliku -- nadaje prawo do wykonywania / nadpisywania / czytania pliku
+
+chmod -x / -w / -r nazwa_pliku -- odbiera prawo do wykonywania / nadpisywania / czytania pliku
+
+g++ kod_programu -- kompiluje kod do pliku wykonywalnego a.out
+
+g++ kod_programu -o nazwa_programu -- kompiluje kod do pliku wykonywalnego o podanej nazwie
+
+g++ kod_programu -Wall -O2 -std=c++11 -o nazwa_programu -- j. w, a ponadto: wypisuje dużo (czasami pomocnych) ostrzeżeń (warning all), włącza drugi poziom optymalizacji kodu (tak jak kompilator na OI) oraz uaktywnia funkcjonalności standardu c++11 (prawdopodobnie jeszcze z nich nie korzystacie; na OI są dostępne)
+
+./program < plik_wejsciowy > plik_wyjsciowy -- uruchamia program z podanym wejściem i wyjściem
+
+ctrl + c -- zabija aktualnie wykonywany program
+
+time ./program -- mierzy i wypisuje czas wykonania programu
+
+man nazwa_komendy -- wyświetla instrukcję obsługi podanej komendy
+
+help nazwa_komendy -- funkcja podobna do man
+
+sudo apt install nazwa_programu -- instalowanie programu
+
+exit -- zamyka konsolę
